@@ -18,7 +18,7 @@ def run_script():
             header = next(reader)
             for row in reader:
                 i = 0
-                while(i<len(header)-2):
+                while(i<len(header)):
                     outputFile.write('%s - %s\n' % (header[i], row[i]))
                     i+=1
                 outputFile.write('\n\n')
