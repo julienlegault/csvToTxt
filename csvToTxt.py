@@ -12,7 +12,7 @@ def run_script():
     inputFileName = e1.get() + '.csv'
     outputFileName = e2.get() + '.txt'
     with open(inputFileName) as csvfile:
-        reader = csv.reader(csvfile, delimiter=',', quotechar='|')
+        reader = csv.reader(csvfile, delimiter=',')
         outputFile = open(outputFileName, 'w')
         try:
             header = next(reader)
