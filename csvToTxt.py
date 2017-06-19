@@ -19,9 +19,9 @@ def run_script():
             for row in reader:
                 i = 0
                 while(i<len(header)):
-                    outputFile.write('%s - %s\n' % (header[i], row[i]))
+                    outputFile.write('%s  - %s\n' % (header[i], row[i]))
                     i+=1
-                outputFile.write('\n\n')
+                outputFile.write('ER  - \n\n')
         except csv.Error as e:
             messagebox.showerror("Error", 'file %s, line %d: %s' % (inputFileName, reader.line_num, e))
     e1.delete(0, END)
